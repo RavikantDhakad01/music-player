@@ -1,0 +1,196 @@
+@media screen and (max-width: 1220px) {
+  .song {
+    width: 180px;
+    font-size: 14px;
+    word-break: break-all;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #leftt {
+    position: absolute;
+    left: -110%;
+  }
+  #right {
+    width: 100vw;
+    margin-left: 30px;
+  }
+  .play {
+    width: 40px;
+  }
+  #hamburger {
+    display: block;
+  }
+  /* .container {
+    width: fit-content;
+  } */
+  .playbar {
+    margin-bottom: 50px;
+  }
+  #close {
+    display: block;
+  }
+
+  #leftt {
+    width: 311px;
+    transition: 0.3s left ease-in;
+  }
+
+  .main2 {
+    width: 79%;
+  }
+
+  .lib2 {
+    width: 261px;
+    height: 66vh;
+  }
+
+  .lib1 {
+    min-height: 60vh;
+  }
+
+  .cards {
+    max-height: 37vh;
+    margin-left: 8px;
+    gap: 24px;
+  }
+  .cards-main {
+    margin-top: 25px;
+  }
+  .card {
+    width: 210px;
+  }
+
+  .seekbar {
+    width: 65vw;
+  }
+}
+@media screen and (max-width: 682px) {
+  #right {
+    width: 95vw;
+  }
+}
+@media screen and (max-width: 532px) {
+  .arrow {
+    display: none;
+  }
+  .card {
+    width: 180px;
+  }
+  .card h3 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .container {
+    margin-bottom: 50px;
+  }
+  body {
+    background-color: black;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    height: 415px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 15px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .seekbar {
+    margin: auto;
+  }
+  .music-player {
+    position: absolute;
+    top: 27px;
+    right: 10%;
+    display: block;
+    width: 37px;
+    cursor: pointer;
+    /* animation: roll 3s linear infinite; */
+  }
+  @keyframes roll {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .song {
+    font-size: 14px;
+    width: 85%;
+    margin-left: 7px;
+  }
+  .cards {
+    max-height: 52vh;
+    margin-left: 0px;
+    margin-top: 10px;
+    gap: 60px;
+    justify-content: center;
+    position: relative;
+  }
+  .cards-main {
+    padding: 30px 25px;
+    position: relative;
+  }
+  .card h3 {
+    font-size: 25px;
+  }
+  .card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .playbar {
+    position: absolute;
+    height: 85px;
+    gap: 22px;
+    width: 92%;
+    top: 100vw;
+    display: none;
+  }
+  #leftt {
+    width: 100%;
+  }
+  #close2 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .abovebar {
+    flex-direction: column;
+    margin-top: -15px;
+    gap: 8px;
+  }
+  .timing {
+    width: auto;
+  }
+  .ssong {
+    width: auto;
+  }
+  .lib2 {
+    width: 82vw;
+    margin-left: 0px;
+  }
+  .main2 {
+    font-size: 18px;
+    width: 80vw;
+  }
+  .library-songs ul li {
+    padding-left: 4px;
+  }
+}
+@media screen and (max-width: 410px) {
+  #right {
+    width: 92vw;
+  }
+}
