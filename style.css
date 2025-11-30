@@ -308,7 +308,7 @@ body {
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
-  left: 20%;
+  left: 0%;
 }
 .navleft {
   display: flex;
@@ -333,3 +333,4 @@ body {
 #close2 {
   display: none;
 }
+
