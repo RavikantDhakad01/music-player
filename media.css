@@ -150,7 +150,8 @@
     position: absolute;
     height: 130px;
     gap: 22px;
-    width: 84%;
+    width: 87%;
+    margin-top: 87px;
     top: 100vw;
     display: none;
   }
@@ -194,4 +195,5 @@
     width: 92vw;
   }
 }
+
 
