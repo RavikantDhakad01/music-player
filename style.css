@@ -316,6 +316,27 @@ body {
 }
 .music-player {
   display: none;
+  padding: 0px 0px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.15s ease;
+  animation: pulse 0.8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.10); /* little more zoom */
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #hamburger {
@@ -333,4 +354,5 @@ body {
 #close2 {
   display: none;
 }
+
 
