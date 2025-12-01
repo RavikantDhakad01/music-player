@@ -72,23 +72,24 @@ currentsong.addEventListener("timeupdate", () => {
   timeInfo.innerHTML = `${formatTime(currentsong.currentTime)}/${formatTime(currentsong.duration)}`;
   circle.style.left = `${(currentsong.currentTime / currentsong.duration) * 100}%`;
 });
-
 previous.addEventListener("click", () => {
-  let index1 = Songs.indexOf(currentsong.src.split("/Songs/")[1]);
-  if (index1 > 0) {
-    currentsong.pause();
-    playmusic(Songs[index1 - 1]);
+  let currentName = ssong.innerHTML.trim();
+  let index = Songs.indexOf(currentName);
+
+  if (index > 0) {
+    playmusic(Songs[index - 1]);
   }
 });
+
 
 next.addEventListener("click", () => {
-  let index2 = Songs.indexOf(currentsong.src.split("/Songs/")[1]);
-  if (index2 < Songs.length - 1) {
-    currentsong.pause();
-    playmusic(Songs[index2 + 1]);
+  let currentName = ssong.innerHTML.trim();
+  let index = Songs.indexOf(currentName);
+
+  if (index < Songs.length - 1) {
+    playmusic(Songs[index + 1]);
   }
 });
-
 hamburger.addEventListener("click", () => {
   left.style.left = "0%";
   left.style.backgroundColor = "black";
@@ -103,7 +104,7 @@ player.addEventListener("click", () => {
 });
 
 close2.addEventListener("click", () => {
-  if (window.innerWidth < 475) playbar.style.display = "none";
+  playbar.style.display = "none";
 });
 
 window.addEventListener("resize", () => {
